@@ -97,12 +97,9 @@ button {
     position: absolute;
     top: 251px;
     left: 552px;
-
-
 }
 
 .parrafoUno {
-
     font-size: 300%;
     font-family: 'Brushstrike';
     color: white;
@@ -142,10 +139,7 @@ button {
     background-image: url(./image/google1.png);
     bottom: 286px;
     right: 895px;
-
 }
-
-
 
 @media (max-width: 430px) {
 
@@ -182,7 +176,6 @@ button {
         height: 129px;
         left: 7px;
         top: 45px;
-
         border-radius: 10px;
         margin-top: 33px;
         margin-left: 119px;
@@ -193,7 +186,6 @@ button {
         margin-bottom: 39px;
         bottom: 388px;
         left: 192px;
-
         top: 383px;
         z-index: 1;
     }
@@ -207,10 +199,8 @@ button {
         margin-top: 136px;
         margin-left: 62px;
         top: 291px;
-
         background: rgba(255, 255, 255, 0.5);
         border-radius: 10px;
-
         right: 1px;
         left: 10px;
     }
@@ -231,7 +221,6 @@ button {
         position: absolute;
         display: flex;
         background-repeat: no-repeat;
-
         background-image: url(./image/new-email-outlined-envelope-back\ 1.png);
         background-position: right;
         margin-top: 23px;
@@ -250,12 +239,9 @@ button {
         height: 22px;
         width: 26px;
         background-image: url(./image/google1.png);
-
         bottom: 259px;
-
         top: 175px;
         right: 251px;
-
     }
 
     button {
