@@ -301,4 +301,30 @@ button {
         font-size: 102%;
     }
 
+    header {
+        background: #03293C;
+        height: 196px;
+    }
+
+    #contenedorBotonesMenu {
+        border-style: solid;
+        border-color: yellow;
+        display: flex;
+    }
+
+    #logoMenu {
+        height: 133px;
+        width: 157px;
+        border-left-width: 1px;
+        margin-left: 118px;
+    }
+
+    .colorUno {
+        background: #49BEB7;
+    }
+
+    .colorDos {
+        background: #E4C01F;
+    }
+
 }

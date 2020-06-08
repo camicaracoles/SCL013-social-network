@@ -1,24 +1,33 @@
 // Este es el punto de entrada de tu aplicacion
+import {
+    myFunction,
 
-var slideIndex = 0;
-showSlides();
+} from "./lib/index.js";
+import {
+    menu
+} from "./lib/view/templateMenu.js";
+import {
+    home
+} from "./lib/view/templateHome.js"
+import {
+    changeRoute
+} from "./lib/router.js"
+import {
+    login
+} from "./lib/view/templateLogin.js";
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("carrusel");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+myFunction();
 
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {
-        slideIndex = 1
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex - 1].style.display = "block";
-    dots[slideIndex - 1].className += " active";
-    setTimeout(showSlides, 7000);
+
+
+const init = () => {
+    document.getElementById("root").innerHTML = login();
+    window.addEventListener("hashchange", () => {
+
+        myFunction();
+        console.log(window.location.hash);
+        changeRoute(window.location.hash)
+
+    })
 }
+window.addEventListener(`load`, init);
