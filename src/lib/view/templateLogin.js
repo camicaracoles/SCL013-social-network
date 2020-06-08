@@ -106,4 +106,8 @@ const showSlides = () => {
     dots[slideIndex - 1].className += " active";
     setTimeout(showSlides, 7000);
 }
+<<<<<<< HEAD
  */
+=======
+ */
+>>>>>>> 3447ee6ee5a0203932509c5c3b449fd1e88c06ad
