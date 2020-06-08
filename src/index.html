@@ -10,80 +10,31 @@
 </head>
 
 <body>
-
-  <div id="contenedorGeneral">
-
-    <img id="logo" src="./image/logo.jpg">
-
-    <div class="carrusel">
-      <div id="imagenUno">
-        <div class="textoInicial">
-          <p class="parrafoUno">¿Te gusta </p>
-          <p class="parrafoUno">viajar por Chile ?</p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="carrusel">
-      <div id="imagenDos">
-        <div class="textoInicial">
-          <p class="parrafoUno">Publica tus</p>
-          <p class="parrafoUno">mejores picadas</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="carrusel">
-      <div id="imagenTres">
-        <div class="textoInicial">
-          <p class="parrafoUno">Conoce a otros </p>
-          <p class="parrafoUno">viajeros</p>
-        </div>
-      </div>
-    </div>
+  <div id="root"> </div>
 
 
-    <div class="carrusel">
-      <div id="imagenCuatro">
-        <div class="textoInicial">
-          <p class="parrafoUno">Recorrer Chile </p>
-          <p class="parrafoUno">ya no es </p>
-          <p class="parrafoUno">una excusa </p>
-        </div>
-      </div>
-    </div>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
 
-    <br>
-    <div style="text-align:center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.14.6//firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6//firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-functions.js"></script>
 
-    </div>
-  </div>
-
-  <img id="usuario" src="image/usercian 1.png">
-  <div id="contenedorIngreso">
-
-
-
-
-    <input id=email placeholder="Correo electronico">
-
-    <input id="contraseña" placeholder="Contraseña">
-    <button id="iniciar"> Iniciar sesión</button>
-    <button id="google">
-      <img id="iconoGoogle" /> sesión con Google
-    </button>
-    <p id="pTres">¿Aún no eres parte?</p>
-    <Button id="botonRegistrate">Registrate</Button>
-
-  </div>
-  </div>
-
-
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC98N0cszSAsZQnhw7Xhvr6RoFpy0Q9VIg",
+      authDomain: "picadelviajero.firebaseapp.com",
+      databaseURL: "https://picadelviajero.firebaseio.com",
+      projectId: "picadelviajero",
+      storageBucket: "picadelviajero.appspot.com",
+      messagingSenderId: "965279866776",
+      appId: "1:965279866776:web:6913e138c98b00e18a15ed"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
   <script type="module" src="main.js"></script>
 </body>
 
