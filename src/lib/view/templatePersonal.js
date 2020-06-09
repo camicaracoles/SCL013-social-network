@@ -1,7 +1,7 @@
 export const muroPersonal = () => {
     const divMuroPersonal = document.createElement("div");
 
-    const viewMuroPersonal = `
+    const viewMuroPersonal = /*html*/ `
     
 <h1>Muro Personal de el usuario </h1>
     `

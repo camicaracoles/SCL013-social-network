@@ -1,6 +1,7 @@
 export const menu = () => {
 
     const viewMenu =
+        /*html*/
         `  
         <ul>
             <li> 
@@ -9,7 +10,9 @@ export const menu = () => {
             <li> 
             <a href="#/muroPersonal">Personajes</a>
             </li>
-           
+            <li> 
+            <a href="#/cerrar">Cerrar Sesion</a>
+            </li>
         </ul>
       `
     return viewMenu;

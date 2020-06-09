@@ -1,7 +1,7 @@
 export const registro = () => {
     const divRegistro = document.createElement("div");
 
-    const viewRegistro = `
+    const viewRegistro = /*html*/ `
     
 <h1>Registrate Aqui </h1>
 <div id=contnedorRegistro>
