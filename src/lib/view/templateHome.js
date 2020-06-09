@@ -1,7 +1,7 @@
 export const home = () => {
     const divHome = document.createElement("div");
 
-    const viewHome = `
+    const viewHome = /*html*/ `
     <header>
     <img id="logoMenu" src="./image/logo.jpg">
     <div id="contenedorBotonesMenu">
@@ -18,5 +18,4 @@ export const home = () => {
     divHome.innerHTML = viewHome;
 
     return viewHome;
-
 }

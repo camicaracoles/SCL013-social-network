@@ -12,7 +12,7 @@ export const menu = () => {
             </li>
             <li> 
             <a href="#/cerrar">Cerrar Sesion</a>
-            </li>
+            </li>         
         </ul>
       `
     return viewMenu;
