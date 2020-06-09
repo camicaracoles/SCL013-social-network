@@ -1,0 +1,1 @@
+/*aqui iran las funciones de firebase*/

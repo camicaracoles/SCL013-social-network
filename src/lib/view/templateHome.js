@@ -1,9 +1,7 @@
 export const home = () => {
     const divHome = document.createElement("div");
-    //  const contenedorRoot = document.getElementById("root");
-    //contenedorRoot.appendChild(divHome);
 
-    const viewHome = `
+    const viewHome = /*html*/ `
     <header>
     <img id="logoMenu" src="./image/logo.jpg">
     <div id="contenedorBotonesMenu">
@@ -19,8 +17,5 @@ export const home = () => {
     console.log(viewHome);
     divHome.innerHTML = viewHome;
 
-    //  divHome.appendChild(viewHome);
-    //  divHome.appendChild(viewHome);
     return viewHome;
-
 }
