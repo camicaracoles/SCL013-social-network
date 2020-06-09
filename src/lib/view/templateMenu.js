@@ -11,7 +11,7 @@ export const menu = () => {
             <a href="#/muroPersonal">Personajes</a>
             </li>
             <li> 
-            <a href="#/cerrar">Cerrar Sesion</a>
+            <a href="#/cerrar" id="btnCerrar">Cerrar Sesion</a>
             </li>         
         </ul>
       `

@@ -35,7 +35,7 @@ export const login = () => {
       <input id=email placeholder="Correo electronico" type="email">
       <input id="contraseña" placeholder="Contraseña" type="password">
       <button id="iniciar"><a href="#/home"> Iniciar sesion</a></button>
-      <button id="google"><img id="iconoGoogle"/> sesión con Google</button>  
+      <button id="btngoogle"><img id="iconoGoogle"/> sesión con Google</button>  
       <p id="pTres">¿Aún no eres parte?</p>
       <button id="botonRegistrate"> <a href="#/registro">Registrate</a></button>
     </div>
