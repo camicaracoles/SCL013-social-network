@@ -1,16 +1,19 @@
 export const registro = () => {
     const divRegistro = document.createElement("div");
 
-    const viewRegistro = `
+    const viewRegistro = /*html*/`
     
-<h1>Registrate Aqui </h1>
-<div id=contnedorRegistro>
-<input placeholder="Correo electronico"/>
-<input placeholder="Contraseña"/>
-<input placeholder="Repetir contraseña"/>
-<button>Registrarse</button>
-</div>
-
+    <div id="pagRegistro">
+    <div id="logo"></div>
+    <div class="titulo"> <p>Registro</p></div>
+     <div id="cont-registro">
+      <form id="form-registro">
+        <input id="email" type="email" placeholder="correo electrónico">
+        <input  id="pass" type="password"placeholder="contraseña">
+        <button id="btnregistro">Registrar</button>
+      </form>
+      </div>
+    </div>
     `
     divRegistro.innerHTML = viewRegistro;
 

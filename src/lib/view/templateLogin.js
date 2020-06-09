@@ -1,10 +1,9 @@
 export const login = () => {
 
   var divLogin = document.createElement("div");
-  //  document.getElementById("root").appendChild(divLogin);
 
   const viewLogin =
-    `
+   /*html*/ `
 <div id="contenedorGeneral">
 
     <img id="logo" src="./image/logo.jpg">
@@ -29,34 +28,20 @@ export const login = () => {
     </div>
   </div>
 
-  <img id="usuario" src="image/usercian 1.png">
-  <div id="contenedorIngreso">
-
-    <input id=email placeholder="Correo electronico" type="email">
-
-    <input id="contraseña" placeholder="Contraseña" type="password">
-    <button id="iniciar">  <a href="#/home" </a >Iniciar sesion</button>
-    <button id="google">
-      <img id="iconoGoogle" /> sesión con Google
-    </button>
-    <p id="pTres">¿Aún no eres parte?</p>
-    <Button id="botonRegistrate"> <a href="#/registro" </a >Registrate</Button>
-
-  </div>
+    <img id="usuario" src="image/usercian 1.png">
+    <!--Formulario de logeo-->
+    <div id="contenedorIngreso">
+      <input id=email placeholder="Correo electronico" type="email">
+      <input id="contraseña" placeholder="Contraseña" type="password">
+      <button id="iniciar"><a href="#/home"> Iniciar sesion</a></button>
+      <button id="google"><img id="iconoGoogle"/> sesión con Google</button>  
+      <p id="pTres">¿Aún no eres parte?</p>
+      <button id="botonRegistrate"> <a href="#/registro">Registrate</a></button>
+    </div>
   </div>
     `
-
-
   divLogin.innerHTML = viewLogin;
 
-  // divLogin.innerHTML = viewLogin;
-  //console.log(divLogin);
-  /* const btn = document.createElement('btn');
-   btn.innerHTML = 'Hola';
-   divLogin.appendChild(btn);
-   btn.addEventListener('click', (e) => {
-       window.location.hash = '/'
-   })*/
   console.log(divLogin);
   return viewLogin;
 
