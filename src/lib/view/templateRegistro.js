@@ -26,3 +26,4 @@ export const registro = () => {
   return divRegistro;
 
 }
+

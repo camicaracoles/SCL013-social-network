@@ -14,15 +14,12 @@ export const home = () => {
     </div>
     </header>
 <input id="inputHome" placeholder="¿Cual es tu pica'?">
-
-
 <div id="contenedorPublicacion">
 <p id="nombreParticipantes"></p>
 <div id="imagenParticipante"> </div>
 <p id="textoPublicacion"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
 <div id="interacciones"></div>
 </div>
-
 <div class="contenedorSalida"> <ul >
 <li> 
 <a href='#/home'>Home</a>
@@ -34,8 +31,6 @@ export const home = () => {
 <a href="" id="btnCerrar">Cerrar Sesion</a>
 </li>         
 </ul>   </div>
-
-
     `
     console.log(viewHome);
     divHome.innerHTML = viewHome;

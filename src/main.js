@@ -16,7 +16,7 @@ import {
 myFunction();
 
 const init = () => {
-    document.getElementById("root").innerHTML = login();
+    document.getElementById("root").appendChild = login();
     window.addEventListener("hashchange", () => {
 
         myFunction();
@@ -27,7 +27,7 @@ const init = () => {
 }
 window.addEventListener(`load`, init);
 
-firebase.auth().onAuthStateChanged((user) => {
+/* firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         console.log('usar ok')
         document.getElementById("root").innerHTML = home();
@@ -56,4 +56,4 @@ const iniciarSesion = () => {
             console.log(error)
         }
     })
-}
+}  */

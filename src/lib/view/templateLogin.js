@@ -3,32 +3,25 @@ export const login = () => {
   const divLogin = document.createElement("div");
 
   const viewLogin =
-    /*html*/
-    `
+    /*html*/ `
 <div id="contenedorGeneral">
-
     <img id="logo" src="./image/logo.jpg">
-
     <div class="carrusel">
       <div id="imagenUno">
         <div class="textoInicial">
           <p class="parrafoUno">¿Te gusta </p>
           <p class="parrafoUno">viajar por Chile ?</p>
         </div>
-
       </div>
     </div>
-
     <br>
     <div style="text-align:center">
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
       <span class="dot"></span>
-
     </div>
   </div>
-
     <img id="usuario" src="image/usercian 1.png">
     <!--Formulario de logeo-->
     <div id="contenedorIngreso">
