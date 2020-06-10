@@ -1,22 +1,28 @@
 export const registro = () => {
-    const divRegistro = document.createElement("div");
+  const divRegistro = document.createElement("div");
 
-    const viewRegistro = /*html*/`
+  const viewRegistro = /*html*/ `
     
-    <div id="pagRegistro">
-    <div id="logo"></div>
-    <div class="titulo"> <p>Registro</p></div>
-     <div id="cont-registro">
-      <form id="form-registro">
-        <input id="email" type="email" placeholder="correo electrónico">
-        <input  id="pass" type="password"placeholder="contraseña">
-        <button id="btnregistro">Registrar</button>
-      </form>
-      </div>
+  <div id="contenedorGeneralRegistro" class="contenedorRegistro">
+    <img id="logo" src="./image/logo.jpg">
+   
+    <div id="contenedorIngreso" >
+      <input class="email" id="emailRegistro" placeholder="Correo electronico" type="email">
+      <input class="contraseña" id="contraseñaRegistro" placeholder="Contraseña" type="password">
+      <input class="usuario" id="usuarioRegistro" placeholder="Nombre de usuario" type="text">
+      <button class="iniciar" id="registrarse"> Registrarse</button>
     </div>
+  </div>
     `
-    divRegistro.innerHTML = viewRegistro;
+  divRegistro.innerHTML = viewRegistro;
 
-    return viewRegistro;
+  const botonRegistro = divRegistro.querySelector('#registrarse');
+  botonRegistro.addEventListener("click", () => {
+    console.log("FUNCIONOOOOOOOOOOO");
+  })
+
+
+
+  return divRegistro;
 
 }

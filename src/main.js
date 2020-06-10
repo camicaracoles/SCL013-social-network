@@ -1,8 +1,16 @@
 // importamos funciones 
-import {myFunction} from "./lib/index.js";
-import {changeRoute} from "./lib/router.js"
-import {login} from "./lib/view/templateLogin.js";
-import { home } from "./lib/view/templateHome.js";
+import {
+    myFunction
+} from "./lib/index.js";
+import {
+    changeRoute
+} from "./lib/router.js"
+import {
+    login
+} from "./lib/view/templateLogin.js";
+import {
+    home
+} from "./lib/view/templateHome.js";
 /* import {accederGoogle} from "./lib/index.js" */
 
 myFunction();
@@ -19,42 +27,33 @@ const init = () => {
 }
 window.addEventListener(`load`, init);
 
-
-//boton inicio sesion con google
-/* const btngoogle = document.getElementById("google");
-btnGoogle.addEventListener("click", () =>{
-  accederGoogle();
-  
-})
- */
-firebase.auth().onAuthStateChanged((user)=> {
+firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-      console.log('usar ok')
-      document.getElementById("root").innerHTML = home();
+        console.log('usar ok')
+        document.getElementById("root").innerHTML = home();
         cerrarSesion()
     } else {
         console.log('no existes')
         document.getElementById("root").innerHTML = login();
         iniciarSesion()
     }
-  });
+});
 
-  const cerrarSesion = () => {
+const cerrarSesion = () => {
     const btnCerrar = document.querySelector('#btnCerrar')
-    btnCerrar.addEventListener('click', () =>{
+    btnCerrar.addEventListener('click', () => {
         firebase.auth().signOut()
     })
 }
-const iniciarSesion=()=>{
+const iniciarSesion = () => {
     const btngoogle = document.querySelector('#btngoogle')
-    btngoogle.addEventListener('click', async()=>{
+    btngoogle.addEventListener('click', async () => {
         console.log('me diste click google')
-        try{
+        try {
             const provider = new firebase.auth.GoogleAuthProvider()
             await firebase.auth().signInWithPopup(provider)
-        }catch(error){
+        } catch (error) {
             console.log(error)
         }
-    }) 
+    })
 }
-

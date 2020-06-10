@@ -1,9 +1,10 @@
 export const login = () => {
 
-  var divLogin = document.createElement("div");
+  const divLogin = document.createElement("div");
 
   const viewLogin =
-   /*html*/ `
+    /*html*/
+    `
 <div id="contenedorGeneral">
 
     <img id="logo" src="./image/logo.jpg">
@@ -31,9 +32,9 @@ export const login = () => {
     <img id="usuario" src="image/usercian 1.png">
     <!--Formulario de logeo-->
     <div id="contenedorIngreso">
-      <input id=email placeholder="Correo electronico" type="email">
-      <input id="contraseña" placeholder="Contraseña" type="password">
-      <button id="iniciar"><a href="#/home"> Iniciar sesion</a></button>
+      <input class="email" id="emailIngreso" placeholder="Correo electronico" type="email">
+      <input class="contraseña" id="contraseñaIngreso" placeholder="Contraseña" type="password">
+      <button class="iniciar" id="iniciarSesion"><a href="#/home"> Iniciar sesion</a></button>
       <button id="btngoogle"><img id="iconoGoogle"/> sesión con Google</button>  
       <p id="pTres">¿Aún no eres parte?</p>
       <button id="botonRegistrate"> <a href="#/registro">Registrate</a></button>
@@ -43,6 +44,6 @@ export const login = () => {
   divLogin.innerHTML = viewLogin;
 
   console.log(divLogin);
-  return viewLogin;
+  return divLogin;
 
 }

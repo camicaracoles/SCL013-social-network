@@ -1,7 +1,8 @@
 export const menu = () => {
-
+    const divMenu = document.createElement("div");
     const viewMenu =
-        /*html*/ `  
+        /*html*/
+        `  
         <ul>
             <li> 
            <a href='#/home'>Home</a>
@@ -14,5 +15,6 @@ export const menu = () => {
             </li>         
         </ul>
       `
-    return viewMenu;
+    divMenu.innerHTML = viewMenu;
+    return divMenu;
 }

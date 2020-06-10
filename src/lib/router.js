@@ -56,30 +56,6 @@ export const changeRoute = (hash) => {
 //aqui ya recibe la pagina que tiene que mostrar (template)
 const showTemplate = (template) => {
     const containerRoot = document.getElementById("root")
-    containerRoot.innerHTML = template();
-    //  containerRoot.appendChild(template());
+    containerRoot.innerHTML = "";
+    containerRoot.appendChild(template());
 }
-
-/*
-    switch (hash) {
-        case '#/':
-            //   containerRoot.innerHTML = "";
-            containerRoot.appendChild(home());
-            break;  if (hash === `#/`) {
-                return showTemplate(hash)
-            } else if (hash === `#/muroPersonal`) {
-                return showTemplate(hash)
-            } else {
-                return showTemplate(hash)
-            }
-        
-        
-        case '#/muroPersonal':
-            //   containerRoot.innerHTML = "";
-
-            containerRoot.appendChild(muroPersonal());
-            break;
-        default:
-            containerRoot.innerHTML = `<h2>No existee pag </h2>`
-    }
-    */
