@@ -1,18 +1,8 @@
-import {
-    home
-} from "./view/templateHome.js";
-import {
-    muroPersonal
-} from "./view/templatePersonal.js";
-import {
-    menu
-} from "./view/templateMenu.js";
-import {
-    login
-} from "./view/templateLogin.js";
-import {
-    registro
-} from "./view/templateRegistro.js"
+import {home} from "./view/templateHome.js";
+import {muroPersonal} from "./view/templatePersonal.js";
+import {menu} from "./view/templateMenu.js";
+import {login} from "./view/templateLogin.js";
+import {registro} from "./view/templateRegistro.js"
 
 // se crea un objeto con llave y valor , el cual tiene guardado los template con su #/(llave) y entrega el template(valor)
 const routes = {
