@@ -3,8 +3,7 @@ export const login = () => {
   var divLogin = document.createElement("div");
 
   const viewLogin =
-    /*html*/
-    `
+   /*html*/ `
 <div id="contenedorGeneral">
 
     <img id="logo" src="./image/logo.jpg">
@@ -42,6 +41,7 @@ export const login = () => {
   </div>
     `
   divLogin.innerHTML = viewLogin;
+
   console.log(divLogin);
   return viewLogin;
 

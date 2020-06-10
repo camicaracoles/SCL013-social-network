@@ -1,7 +1,7 @@
 export const registro = () => {
-    const divRegistro = document.createElement("div");
+  const divRegistro = document.createElement("div");
 
-    const viewRegistro = /*html*/ `
+  const viewRegistro = /*html*/ `
     
     <div id="pagRegistro">
     <div id="logo"></div>
@@ -10,13 +10,13 @@ export const registro = () => {
       <form id="form-registro">
         <input id="email" type="email" placeholder="correo electrónico">
         <input  id="pass" type="password"placeholder="contraseña">
-        <button id="btnregistro">Registrar</button>
+        <button onclick="registrar() "id="btnregistro">Registrar</button>
       </form>
       </div>
     </div>
     `
-    divRegistro.innerHTML = viewRegistro;
+  divRegistro.innerHTML = viewRegistro;
 
-    return viewRegistro;
+  return viewRegistro;
 
 }
