@@ -1,7 +1,6 @@
 export const home = () => {
-    const divHome = document.createElement("div");
-
-    const viewHome = /*html*/ `
+ window.location.hash = '/home';
+document.getElementById('root').innerHTML = /*html*/ `
     <header>
     <img id="logoMenu" src="./image/logo.jpg">
     <div id="contenedorBotonesMenu">
@@ -14,8 +13,6 @@ export const home = () => {
     </div>
     </header>
 <input id="inputHome" placeholder="¿Cual es tu pica'?">
-
-
 <div id="contenedorPublicacion">
 <p id="nombreParticipantes"></p>
 <div id="imagenParticipante"> </div>
@@ -24,21 +21,18 @@ export const home = () => {
 </div>
 
 <div class="contenedorSalida"> <ul >
-<li> 
-<a href='#/home'>Home</a>
-</li>
-<li> 
-<a href="#/muroPersonal">Personajes</a>
-</li>
-<li> 
-<a href="" id="btnCerrar">Cerrar Sesion</a>
-</li>         
-</ul>   </div>
-
-
+    <li> 
+    <a href='#/home'>Home</a>
+    </li>
+    <li> 
+    <a href="#/muroPersonal">Personajes</a>
+    </li>
+    <li> 
+    <a href="" id="btnCerrar">Cerrar Sesion</a>
+    </li>         
+    </ul>   
+</div>
     `
-    console.log(viewHome);
-    divHome.innerHTML = viewHome;
 
-    return divHome;
+
 }

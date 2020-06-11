@@ -1,11 +1,8 @@
 export const muroPersonal = () => {
-    const divMuroPersonal = document.createElement("div");
-
-    const viewMuroPersonal = `
+    window.location.hash = '/muroPersonal'
+    document.getElementById('root').innerHTML = `
     
 <h1>Muro Personal de el usuario </h1>
     `
-    divMuroPersonal.innerHTML = viewMuroPersonal;
-    return divMuroPersonal;
-
+   
 }
