@@ -1,7 +1,6 @@
 export const home = () => {
- const divHome = document.createElement("div");
- 
-    const viewHome = /*html*/ `
+ window.location.hash = '/home';
+document.getElementById('root').innerHTML = /*html*/ `
     <header>
     <img id="logoMenu" src="./image/logo.jpg">
     <div id="contenedorBotonesMenu">
@@ -34,10 +33,6 @@ export const home = () => {
     </ul>   
 </div>
     `
-    console.log(viewHome);
-    divHome.innerHTML = viewHome; 
 
- 
 
-    return viewHome;
 }

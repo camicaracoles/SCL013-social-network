@@ -1,11 +1,10 @@
-/*  import {loginEmail} from "../viewController.js" ; */
+import {loginEmail} from "../viewController.js" ;
+import {registro} from "./templateRegistro.js";
 
 export const login = () => {
-
-//const divLogin = document.createElement("div");
-
-  const viewLogin =
-    /*html*/ `
+window.location.hash = '/login';
+document.getElementById('root').innerHTML =  /*html*/ `
+  
 <div id="contenedorGeneral">
     <img id="logo" src="./image/logo.jpg">
     <div class="carrusel">
@@ -32,23 +31,21 @@ export const login = () => {
       <button class="iniciar" id="iniciarSesion">Iniciar sesion</button>
       <button id="btngoogle"><img id="iconoGoogle"/> sesión con Google</button>  
       <p id="pTres">¿Aún no eres parte?</p>
-      <button id="botonRegistrate"> <a href="#/registro">Registrate</a></button>
+      <button id="botonRegistrate"> Registrate</button>
     </div>
   </div>
-    `
-   
-//divLogin.appendChild = viewLogin;
-  //console.log(divLogin);
- // return divLogin;
- const container = document.getElementById("root");
- container.innerHTML= viewLogin;
+    `;
 
- const botonIngreso = container.querySelector('#iniciarSesion');
+ const botonIngreso = document.getElementById('iniciarSesion');
  botonIngreso.addEventListener("click", () => {
    console.log("user registrado mija");
-  /*  loginEmail(); */
+   loginEmail(); 
  }) 
 
- return viewLogin;
+ const botonRegistrate = document.getElementById('botonRegistrate');
+ botonRegistrate.addEventListener("click", () => {
+   console.log("user registrado mija");
+   registro();  
+ }) 
 
 }

@@ -1,44 +1,24 @@
 // importamos funciones 
-import {
-    myFunction
-} from "./lib/index.js";
-import {
-    changeRoute
-} from "./lib/router.js"
-import {
-    login
-} from "./lib/view/templateLogin.js";
-import {
-    home
-} from "./lib/view/templateHome.js";
-/* import {accederGoogle} from "./lib/index.js" */
+import {myFunction} from "./lib/index.js";
+import {login} from "./lib/view/templateLogin.js";
+import {home} from "./lib/view/templateHome.js";
+
 
 myFunction();
 
-const init = () => {
-    document.getElementById("root").innerHTML = login();
-    window.addEventListener("hashchange", () => {
-
-        myFunction();
-        console.log(window.location.hash);
-        changeRoute(window.location.hash)
-
-    })
-}
-window.addEventListener(`load`, init);
-
+//funcion que verifica si hay un usuario registrado
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         console.log('usar ok')
-        document.getElementById("root").innerHTML= home();
+        home();
         cerrarSesion()
     } else {
         console.log('no existes')
-        document.getElementById("root").innerHTML = login();
+        login();
         iniciarSesion()
     }
 });
-
+ 
 const cerrarSesion = () => {
     const btnCerrar = document.querySelector('#btnCerrar')
     btnCerrar.addEventListener('click', () => {

@@ -1,8 +1,8 @@
-import {registrar} from "../viewController.js"
+import {registrar} from "../viewController.js" 
 export const registro = () => {
-  const divRegistro = document.createElement("div");
+  window.location.hash = '/registro';
 
-  const viewRegistro = /*html*/ `
+ document.getElementById('root').innerHTML = /*html*/ `
     
   <div id="contenedorGeneralRegistro" class="contenedorRegistro">
     <img id="logo" src="./image/logo.jpg">
@@ -15,17 +15,13 @@ export const registro = () => {
     </div>
   </div>
     `
-  divRegistro.innerHTML = viewRegistro;
 
-  const botonRegistro = divRegistro.querySelector('#registrarse');
+  const botonRegistro = document.getElementById('registrarse');
   botonRegistro.addEventListener("click", () => {
     console.log("FUNCIONOOOOOOOOOOO");
-    registrar();
+    registrar(); 
   })
 
-
-
-  return divRegistro;
 
 }
 
