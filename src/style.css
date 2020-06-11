@@ -161,6 +161,8 @@ button {
     font-size: 102%;
 }
 
+/*muro general*/
+
 header {
     background: #03293C;
     height: 196px;
@@ -188,15 +190,21 @@ header {
     background: #E4C01F;
 }
 
-
-.contenedorSalida {
+#contenedorEscribir {
     border-style: solid;
-    border-color: green;
-    background: #03293C;
-    margin-top: 461px;
-    color: white;
 }
 
+#btnPublicar {
+    width: 412px;
+}
+
+#opcionPublicar {
+    width: 92px;
+    height: 25px;
+    margin-left: 30px;
+}
+
+/*contenedor publicacion*/
 #contenedorPublicacion {
     border-style: solid;
     border-color: rgba(68, 68, 68, 0.18);
@@ -208,13 +216,17 @@ header {
 #nombreParticipantes {
     border-style: solid;
     border-color: pink;
-    height: 33px;
+    height: 47px;
 }
 
 #interacciones {
     background: #00D1CD;
     height: 31px;
-    margin-top: 28px;
+
+
+    margin-top: 0px;
+    width: 422px;
+    margin-right: 6px;
 }
 
 #imagenParticipante {
@@ -227,6 +239,29 @@ header {
 #inputHome {
     height: 83px;
     width: 401px;
+}
+
+.contenedorSalida {
+    border-style: solid;
+    border-color: green;
+    background: #03293C;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 38px;
+    margin-top: 33px;
+}
+
+#btnHome {
+    background-image: url("./image/VectorCasa.png");
+    background-repeat: no-repeat;
+    width: 32px;
+}
+
+#btnCerrar {
+    background-image: url("./image/cerrarSesion.png");
+    background-repeat: no-repeat;
+    width: 32px;
 }
 
 @media (min-width: 1440px) and (max-width: 1920px) {

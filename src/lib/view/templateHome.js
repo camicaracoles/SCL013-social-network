@@ -1,6 +1,6 @@
 export const home = () => {
- window.location.hash = '/home';
-document.getElementById('root').innerHTML = /*html*/ `
+    window.location.hash = '/home';
+    document.getElementById('root').innerHTML = /*html*/ `
     <header>
     <img id="logoMenu" src="./image/logo.jpg">
     <div id="contenedorBotonesMenu">
@@ -12,7 +12,24 @@ document.getElementById('root').innerHTML = /*html*/ `
         <button class="colorDos">Tour</button>
     </div>
     </header>
-<input id="inputHome" placeholder="¿Cual es tu pica'?">
+    <div id="contenedorEscribir">
+        <input id="inputHome" type="text" placeholder="¿Cual es tu pica'?">
+        <input type="file"> 
+        <select id="opcionPublicar">
+
+        <option>Ruta </option>
+        <option> Hospedaje</option>
+        <option>Comida </option>
+        <option>Clima </option>
+        <option>Transporte </option>
+        <option> Tour</option>
+
+         </select>
+ 
+   
+    <button id="btnPublicar"> Publicar</button>
+     </div>
+
 <div id="contenedorPublicacion">
 <p id="nombreParticipantes"></p>
 <div id="imagenParticipante"> </div>
@@ -20,17 +37,17 @@ document.getElementById('root').innerHTML = /*html*/ `
 <div id="interacciones"></div>
 </div>
 
-<div class="contenedorSalida"> <ul >
-    <li> 
-    <a href='#/home'>Home</a>
-    </li>
-    <li> 
+<div class="contenedorSalida"> 
+
+   
+    <a id="btnHome" href='#/home'></a>
+ 
+ 
     <a href="#/muroPersonal">Personajes</a>
-    </li>
-    <li> 
-    <a href="" id="btnCerrar">Cerrar Sesion</a>
-    </li>         
-    </ul>   
+  
+    <a  id="btnCerrar"></a>
+       
+
 </div>
     `
 
