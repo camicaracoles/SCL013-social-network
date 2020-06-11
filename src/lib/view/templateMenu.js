@@ -16,5 +16,6 @@ export const menu = () => {
         </ul>
       `
     divMenu.innerHTML = viewMenu;
+    
     return divMenu;
 }

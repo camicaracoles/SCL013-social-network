@@ -16,7 +16,7 @@ import {
 myFunction();
 
 const init = () => {
-    document.getElementById("root").appendChild = login();
+    document.getElementById("root").innerHTML = login();
     window.addEventListener("hashchange", () => {
 
         myFunction();
@@ -27,10 +27,10 @@ const init = () => {
 }
 window.addEventListener(`load`, init);
 
-/* firebase.auth().onAuthStateChanged((user) => {
+firebase.auth().onAuthStateChanged((user) => {
     if (user) {
         console.log('usar ok')
-        document.getElementById("root").innerHTML = home();
+        document.getElementById("root").innerHTML= home();
         cerrarSesion()
     } else {
         console.log('no existes')
@@ -56,4 +56,6 @@ const iniciarSesion = () => {
             console.log(error)
         }
     })
-}  */
+}  
+
+

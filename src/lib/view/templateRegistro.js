@@ -1,3 +1,4 @@
+import {registrar} from "../viewController.js"
 export const registro = () => {
   const divRegistro = document.createElement("div");
 
@@ -8,7 +9,7 @@ export const registro = () => {
    
     <div id="contenedorIngreso" >
       <input class="email" id="emailRegistro" placeholder="Correo electronico" type="email">
-      <input class="contraseña" id="contraseñaRegistro" placeholder="Contraseña" type="password">
+      <input class="contraseña" id="passRegistro" placeholder="Contraseña" type="password">
       <input class="usuario" id="usuarioRegistro" placeholder="Nombre de usuario" type="text">
       <button class="iniciar" id="registrarse"> Registrarse</button>
     </div>
@@ -19,6 +20,7 @@ export const registro = () => {
   const botonRegistro = divRegistro.querySelector('#registrarse');
   botonRegistro.addEventListener("click", () => {
     console.log("FUNCIONOOOOOOOOOOO");
+    registrar();
   })
 
 
